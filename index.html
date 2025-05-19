@@ -1,11 +1,159 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> My first web page </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamHomes | Find Your Perfect Place</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1> Welcome to My website </h1>
-<hr/>
-<p> My name is Theo </p>
-</p> i love web development	
+
+<header class="bg-primary text-white py-3 mb-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <input type="text" placeholder="Search homes..." class="form-control mb-2 mb-md-0 w-100 w-md-25 me-md-3 search-bar" />
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="rent.html">Rent</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="buy.html">Buy</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="sell.html">Sell</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="agents.html">Agents</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="text-center mt-3">Welcome to DreamHomes</h1>
+  </div>
+</header>
+<main class="container-fluid px-0">
+<!-- Slideshow -->
+<section class="slideshow-container mb-5">
+  <div class="container d-flex justify-content-center">
+    <div id="homeCarousel" class="carousel slide w-100" data-bs-ride="carousel" style="max-width:900px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/house31.jpg" alt="House for Sale">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/house29.jpg" alt="House for Rent">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/house30.jpg" alt="Another Property">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Featured Properties -->
+  <section class="properties mb-5">
+    <h2>Houses for Rent</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/house8.jpg" class="card-img-top" alt="Rental House">
+          <div class="card-body">
+            <p class="card-text">2BR Cozy Apartment - P3,500/month</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/house11.jpg" class="card-img-top" alt="Rental House">
+          <div class="card-body">
+            <p class="card-text">3BR House with Yard - P5,000/month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-4">Houses for Sale</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/house25.jpg" class="card-img-top" alt="House for Sale">
+          <div class="card-body">
+            <p class="card-text">Modern 4BR Home - P950,000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/house11.jpg" class="card-img-top" alt="House for Sale">
+          <div class="card-body">
+            <p class="card-text">Luxury Villa - P2,100,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agents -->
+  <section class="agents-section mb-5">
+    <h2>Meet Our Agents</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="images/agent1.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="Agent Sarah">
+          <div class="card-body">
+            <h3 class="card-title">Jane S.</h3>
+            <p class="card-text">4.9 ★★★★☆</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="images/agent2.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="Agent James">
+          <div class="card-body">
+            <h3 class="card-title">John D.</h3>
+            <p class="card-text">4.8 ★★★★☆</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center">
+          <img src="images/agent3.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="Agent Sarah">
+          <div class="card-body">
+            <h3 class="card-title">Brighton M.</h3>
+            <p class="card-text">4.9 ★★★★☆</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">Thank you for visiting DreamHomes! &copy; 2025</p>
+</footer>
+
+<!-- Bootstrap JS Bundle (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Optional: Auto start the carousel and set interval (in milliseconds)
+  const homeCarousel = document.querySelector('#homeCarousel');
+  if (homeCarousel) {
+    const carousel = new bootstrap.Carousel(homeCarousel, {
+      interval: 3000, // 3 seconds per slide
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+  }
+</script>
 </body>
 </html>
