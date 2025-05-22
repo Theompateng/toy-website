@@ -5,14 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - DreamHomes Real Estate</title>
   <link rel="stylesheet" href="styles.css"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="about-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">DreamHomes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rent.html">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="buy.html">Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="agents.html">Agents</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="about-header text-center my-4">
     <h1>About DreamHomes</h1>
     <p>Turning your dreams into addresses.</p>
   </header>
 
-  <section class="about-content">
+  <section class="about-content container">
     <div class="about-text">
       <h2>Who We Are</h2>
       <p>
@@ -33,5 +53,7 @@
       </ul>
     </div>
   </section>
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
